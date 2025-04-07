@@ -101,7 +101,7 @@ python src/models/threshold.py
 ```
 
 ## Project File Structure: 
-
+```
 Fake_Review_Detector/
 ├── data/
 │   ├── raw/             # Raw input data files
@@ -137,3 +137,4 @@ Fake_Review_Detector/
 │
 ├── requirements.txt     # Python dependencies
 └── README.md            # Project documentation
+```
