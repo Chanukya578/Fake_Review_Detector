@@ -119,11 +119,33 @@ Fake_Review_Detector/
 │   │
 │   ├── models/          # ML model implementations
 │   │   ├── decision_tree.py
-│   │   ├── logistic_regression.py
-│   │   ├── random_forest.py
-│   │   ├── svm.py
-│   │   ├── model_bert.py
-│   │   └── thresold.py
+│   │   ├── model1/
+│   │   │   ├── category_review_relevance.csv
+│   │   │   ├── dataset/
+│   │   │   │   ├── test.csv
+│   │   │   │   ├── train.csv
+│   │   │   │   └── val.csv
+│   │   │   ├── inference.py
+│   │   │   ├── models/
+│   │   │   │   ├── dictionary.gensim
+│   │   │   │   ├── label_encoder.pkl
+│   │   │   │   ├── lda_model.gensim
+│   │   │   │   ├── lda_model.gensim.expElogbeta.npy
+│   │   │   │   ├── lda_model.gensim.state
+│   │   │   │   └── tfidf_vectorizer.pkl
+│   │   │   ├── threshold.py
+│   │   │   ├── train.py
+│   │   │   ├── val_category_relevance.csv
+│   │   │   ├── val_results.csv
+│   │   │   └── val_set_metrics.csv
+│   │   ├── model2/
+│   │   │   ├── dataset.csv
+│   │   │   ├── metrics_with_threshold_per_rating.csv
+│   │   │   ├── model_bert.py
+│   │   │   ├── test.csv
+│   │   │   ├── threshold.py
+│   │   │   ├── train.csv
+│   │   │   └── val.csv
 │   │
 │   ├── preprocessing/   # Text preprocessing pipeline
 │   │   ├── clean_text.py       # Text cleaning functions
