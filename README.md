@@ -81,6 +81,24 @@ or for all models:
 ```bash
 python src/main.py --mode train_and_evaluate --all-models
 ```
+### Training with BERT
+
+To train the model using BERT:
+
+```bash
+python src/models/model_bert.py
+```
+
+### Inference and Threshold Calculation
+
+To infer and calculate thresholds using the trained model:
+
+1. Download the model from: [Google Drive](https://drive.google.com/file/d/1f3-kes7OcHLdDDf89ipK87fDqyG9uC6h/view?usp=sharing)
+2. Run the following command:
+
+```bash
+python src/models/threshold.py
+```
 
 ## Project File Structure: 
 Fake_Review_Detector/
@@ -102,7 +120,9 @@ Fake_Review_Detector/
 │   │   ├── decision_tree.py
 │   │   ├── logistic_regression.py
 │   │   ├── random_forest.py
-│   │   └── svm.py
+│   │   ├── svm.py
+│   │   ├── model_bert.py
+│   │   └── thresold.py
 │   │
 │   ├── preprocessing/   # Text preprocessing pipeline
 │   │   ├── clean_text.py       # Text cleaning functions
