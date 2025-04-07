@@ -83,6 +83,7 @@ python src/main.py --mode train_and_evaluate --all-models
 ```
 
 ## Project File Structure: 
+
 Fake_Review_Detector/
 ├── data/
 │   ├── raw/             # Raw input data files
