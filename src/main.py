@@ -2,17 +2,15 @@ import os
 import pandas as pd
 import argparse
 from sklearn.pipeline import Pipeline
-from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
+from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report, roc_auc_score
 from . import config as cfg
 
 # Import local modules
 from utils import split_dataset, save_model, load_model, ensure_dir_exists
-from preprocessing_DONE.preprocessing_pipeline import load_and_preprocess_dataset, preprocess_text
+from preprocessing.preprocessing_pipeline import load_and_preprocess_dataset, preprocess_text
 
 def preprocess_datasets(raw_data_dir='data/raw', 
                         processed_data_dir='data/preprocessed'):
